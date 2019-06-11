@@ -1,11 +1,11 @@
 
-#Start gin server
+# Start gin server
 
-go run server.go
+`go run server.go`
 
-#Run load testing
+# Run load testing
 
-wrk -t 1 -s scripts/increasement.lua http://localhost:3000
+`wrk -t 1 -s scripts/increasement.lua http://localhost:3000`
 
 then you can see PostForm is not thread safe
 Maybe because gin use a cache for post parameters
